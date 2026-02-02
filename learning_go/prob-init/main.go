@@ -44,14 +44,14 @@ func main() {
 		os.Exit(1)
 	}
 
-	// prob-init.go テンプレ生成
-	mainFilePath := filepath.Join(dirPath, "prob-init.go")
+	// テンプレ生成
+	mainFilePath := filepath.Join(dirPath, modName+"_main.go")
 	template := `package main
 
 import "fmt"
 
 func main() {
-	fmt.Println("start")
+	fmt.Println("Hello, World!")
 }
 `
 
